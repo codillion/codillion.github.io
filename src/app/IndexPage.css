@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.navbarlinks-mobile::-webkit-scrollbar{
+  opacity: 0;
+  display: none;
+}
+
+body {
+  margin: 0px;
+  padding: 0px 120px;
+  background: rgb(2, 2, 2);
+}
+
+#navbar {
+  padding: 28px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#navbarlogo {
+  display: flex;
+  flex-direction: row;
+  user-select: none;
+  align-items: center;
+  color: white;
+}
+
+#navbarlogo img {
+  -webkit-user-drag: none;
+  user-select: none;
+  margin-right: 10px;
+  height: 50px;
+}
+
+.navbarlinks{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navbarlinks a{
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  font-size: 18px;
+  margin: 0px 23px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navbarlinks a::after {
+  transition: 0.4s;
+  content: "";
+  height: 3px;
+  position: relative;
+  width: 0%;
+  display: block;
+  border-radius: 2px;
+  background: rgb(94 64 255);
+}
+
+.navbarlinks a:hover::after {
+  width: 100%;
+}
+
+#menudiscordlogo {
+  height: 28px;
+  margin: 0px 0px;
+  margin-right: 0px;
+  cursor: pointer;
+}
+
+
+#menuclose {
+  height: 30px;
+  display: none;
+}
+
+#menuopen {
+  height: 30px;
+  display: none;
+}
+
+#intro-main {
+  height: 100%;
+  margin-top: 60px;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+#introimg {
+  display: flex;
+  justify-content: center;
+}
+
+#introimg img {
+  height: 180px;
+}
+
+#introtxt {
+  width: 100%;
+  text-align: center;
+}
+
+#introtxt h1 {
+  margin-bottom: 3px;
+}
+#introtxt p {
+  margin-top: 0px;
+}
+
+#introtxt-btn {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#blogbtn {
+  width: 100px;
+  padding: 8px 5px;
+  border-radius: 3px;
+  margin: 0px 5px;
+  border: 3px solid rgb(25, 14, 85);
+  outline: none;
+  font-size: 17px;
+  background: rgb(7, 4, 24);
+  cursor: pointer;
+  transition: 0.2s;
+  color: white;
+}
+
+#blogbtn::before{
+  transition: 0.2s;
+  content: "";
+  display: block;
+  height: 3px;
+  position: relative;
+  top: -17px;
+  left: -10px; 
+  width: 0%;
+  background: rgb(25, 14, 85);
+}
+
+#blogbtn::after{
+  content: "";
+  display: block;
+  height: 3px;
+  position: relative;
+  right: -101%; 
+  bottom: -17px;
+  width: 0%;
+  transition: 0.2s;
+  background: rgb(25, 14, 85);
+}
+
+#blogbtn:hover{
+  box-shadow: 0px 0px 10px rgba(93, 64, 255, 0.335);
+  border: 3px solid rgb(54, 31, 189);
+  text-shadow: 0px 0px 10px rgb(76, 76, 76);
+}
+
+#blogbtn:hover::before {
+  width: 18%;
+}
+
+#blogbtn:hover::after {
+  width: 18%;
+}
+
+#aboutmebtn {
+  width: 100px;
+  height: 100%;
+  padding: 8px 5px;
+  border-radius: 3px;
+  margin: 0px 5px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: white;
+  outline: none;
+  transition: 0.4s;
+  font-size: 17px;
+}
+
+#blogbtn:hover {
+  background: rgb(7, 4, 24);
+}
+
+#aboutmebtn:hover {
+  background: rgb(22, 22, 22);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1050px) and (min-width: 0px) {
+  body {
+    padding: 0px 80px;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 0px) {
+  body {
+    padding: 0px 40px;
+  }
+}
+
+@media (max-width: 720px) and (min-width: 0px) {
+  .navbarlinks {
+    display: none;
+  }
+  .navbarlinks-mobile {
+    background: rgb(3, 3, 3);
+    padding-top: 40px;
+    padding-right: 170px;
+    box-shadow: 0px 2px 20px 6000px #000000eb;
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+    flex-direction: column;
+    position: fixed;
+    overflow-y: scroll; 
+    top: 0;
+    right: 0;
+  }
+  .navbarlinks-mobile a {
+    margin: 17px 0px;
+    margin-left: 22px;
+  }
+  .navbarlinks-mobile a #menudiscordlogo {
+    margin-left: 0px;
+  }
+  #menuclose {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: block;
+  }
+  #menuopen {
+    display: block;
+  }
+  #intro-main{
+    margin-top: 108px;
+  }
+}
+
+@media (max-width: 450px) and (min-width: 0px) {
+  body {
+    padding: 0px 30px;
+  }
+  #introimg img {
+    height: 130px;
+  }
+}

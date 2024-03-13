@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.navbarlinks-mobile::-webkit-scrollbar {
+  opacity: 0;
+  display: none;
+}
+
+body {
+  margin: 0px;
+  padding: 0px 120px;
+  background: rgb(2, 2, 2);
+}
+
+#navbar {
+  padding: 28px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#navbarlogo {
+  display: flex;
+  flex-direction: row;
+  user-select: none;
+  align-items: center;
+  color: white;
+}
+
+#navbarlogo img {
+  -webkit-user-drag: none;
+  user-select: none;
+  margin-right: 10px;
+  height: 50px;
+}
+
+.navbarlinks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navbarlinks a {
+  display: flex;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  font-size: 18px;
+  margin: 0px 23px;
+}
+
+.navbarlinks a::after {
+  transition: 0.4s;
+  content: "";
+  height: 3px;
+  position: relative;
+  width: 0%;
+  display: block;
+  border-radius: 2px;
+  background: rgb(94 64 255);
+}
+
+.navbarlinks a:hover::after {
+  width: 100%;
+}
+.active::after {
+  width: 100%;
+  transition: 0.4s;
+  content: "";
+  height: 3px;
+  position: relative;
+  display: block;
+  border-radius: 2px;
+  background: rgb(94 64 255);
+}
+
+#menudiscordlogo {
+  height: 28px;
+  margin: 0px 0px;
+  margin-right: 0px;
+  cursor: pointer;
+}
+
+#menuclose {
+  height: 30px;
+  display: none;
+}
+
+#menuopen {
+  height: 30px;
+  display: none;
+}
+
+#donate-main {
+  margin-top: 39px;
+}
+
+#donate-head {
+  color: white;
+}
+
+#donate-head h1 {
+  margin-bottom: 0px;
+}
+
+#donate-head p {
+  margin-top: 3px;
+}
+
+#donate-body {
+  display: flex;
+  margin-top: 28px;
+}
+
+.donate-method {
+  background: rgb(6, 6, 6);
+  width: 50%;
+  border: 1px solid rgba(27, 27, 27, 0.753);
+  padding: 24px 19px;
+  border-radius: 9px;
+  margin: 0px 20px;
+  color: white;
+}
+
+.donateimg img {
+  height: 80px;
+}
+
+#patreon-btn {
+  border: none;
+  background: #1b0f5d;
+  cursor: pointer;
+  border-radius: 3px;
+  border: 3px solid #583cfa;
+  color: white;
+  padding: 6px 9px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+@media (max-width: 1050px) and (min-width: 0px) {
+  body {
+    padding: 0px 80px;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 0px) {
+  body {
+    padding: 0px 40px;
+  }
+}
+
+@media (max-width: 810px) and (min-width: 0px) {
+  .donate-method {
+    margin: 0px 12px;
+  }
+
+  #donate-body {
+    flex-direction: c;
+  }
+}
+
+@media (max-width: 720px) and (min-width: 0px) {
+  .navbarlinks {
+    display: none;
+  }
+  .navbarlinks-mobile {
+    background: rgb(3, 3, 3);
+    padding-top: 40px;
+    padding-right: 170px;
+    box-shadow: 0px 2px 20px 6000px #000000eb;
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+    flex-direction: column;
+    position: fixed;
+    overflow-y: scroll;
+    top: 0;
+    right: 0;
+  }
+  .navbarlinks-mobile a {
+    margin: 17px 0px;
+    margin-left: 22px;
+  }
+  #menuclose {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: block;
+  }
+  #menuopen {
+    display: block;
+  }
+  .donate-method {
+    margin: 25px 0px;
+    width: 100%;
+  }
+  
+  #donate-body {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 450px) and (min-width: 0px) {
+  body {
+    padding: 0px 30px;
+  }
+}

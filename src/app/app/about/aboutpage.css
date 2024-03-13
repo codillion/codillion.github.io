@@ -1,0 +1,437 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.navbarlinks-mobile::-webkit-scrollbar {
+  opacity: 0;
+  display: none;
+}
+
+body {
+  margin: 0px;
+  padding: 0px 120px;
+  background: rgb(2, 2, 2);
+}
+
+#navbar {
+  padding: 28px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#navbarlogo {
+  display: flex;
+  flex-direction: row;
+  user-select: none;
+  align-items: center;
+  color: white;
+}
+
+#navbarlogo img {
+  -webkit-user-drag: none;
+  user-select: none;
+  margin-right: 10px;
+  height: 50px;
+}
+
+.navbarlinks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navbarlinks a {
+  display: flex;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  font-size: 18px;
+  margin: 0px 23px;
+}
+
+.navbarlinks a::after {
+  transition: 0.4s;
+  content: "";
+  height: 3px;
+  position: relative;
+  width: 0%;
+  display: block;
+  border-radius: 2px;
+  background: rgb(94 64 255);
+}
+
+.navbarlinks a:hover::after {
+  width: 100%;
+}
+.active::after {
+  width: 100%;
+  transition: 0.4s;
+  content: "";
+  height: 3px;
+  position: relative;
+  display: block;
+  border-radius: 2px;
+  background: rgb(94 64 255);
+}
+
+#menudiscordlogo {
+  height: 28px;
+  margin: 0px 0px;
+  margin-right: 0px;
+  cursor: pointer;
+}
+
+#menuclose {
+  height: 30px;
+  display: none;
+}
+
+#menuopen {
+  height: 30px;
+  display: none;
+}
+
+#about-main {
+  margin-top: 80px;
+  margin-bottom: 170px;
+  color: white;
+  padding: 0px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#abouttxt {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-right: 80px;
+}
+
+#abouttxt h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+#abouttxt h4 {
+  margin-bottom: 3px;
+}
+#aboutimg {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+#aboutimg-img {
+  height: 220px;
+}
+
+#aboutbtn {
+  margin-top: 16px;
+}
+#aboutbtn a {
+  margin: 0px 8px;
+}
+
+#aboutbtn a:nth-child(1) {
+  margin-left: 0px;
+}
+
+#aboutbtn-portfolio {
+  background: #1c1253;
+  cursor: pointer;
+  color: white;
+  padding: 7px 12px;
+  border: none;
+  transition: 0.2s;
+  outline: none;
+  font-size: 17px;
+  font-weight: 400;
+  border-radius: 2px;
+}
+
+#aboutbtn-github {
+  background: #1c1253;
+  cursor: pointer;
+  padding: 7px 12px;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  font-weight: 400;
+  border-radius: 2px;
+  color: white;
+  transition: 0.2s;
+}
+
+#aboutbtn-instagram {
+  background: #1c1253;
+  cursor: pointer;
+  padding: 7px 12px;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  font-weight: 400;
+  border-radius: 2px;
+  color: white;
+  transition: 0.2s;
+}
+
+#aboutbtn-portfolio::before {
+  transition: 0.2s;
+  content: "";
+  display: block;
+  height: 3px;
+  position: relative;
+  top: -17px;
+  left: -10px;
+  width: 0%;
+  background: rgb(25, 14, 85);
+}
+
+#aboutbtn-portfolio::after {
+  content: "";
+  display: block;
+  height: 3px;
+  position: relative;
+  right: -101%;
+  bottom: -17px;
+  width: 0%;
+  transition: 0.2s;
+  background: rgb(25, 14, 85);
+}
+
+#aboutbtn-portfolio:hover {
+  box-shadow: 0px 0px 10px rgba(93, 64, 255, 0.335);
+  text-shadow: 0px 0px 10px rgb(76, 76, 76);
+}
+
+#aboutbtn-portfolio:hover::before {
+  width: 18%;
+}
+
+#aboutbtn-portfolio:hover::after {
+  width: 18%;
+}
+
+#aboutbtn-github::before {
+  transition: 0.2s;
+  content: "";
+  display: block;
+  height: 3px;
+  position: relative;
+  top: -17px;
+  left: -10px;
+  width: 0%;
+  background: rgb(25, 14, 85);
+}
+
+#aboutbtn-github::after {
+  content: "";
+  display: block;
+  height: 3px;
+  position: relative;
+  right: -101%;
+  bottom: -17px;
+  width: 0%;
+  transition: 0.2s;
+  background: rgb(25, 14, 85);
+}
+
+#aboutbtn-github:hover {
+  box-shadow: 0px 0px 10px rgba(93, 64, 255, 0.335);
+  text-shadow: 0px 0px 10px rgb(76, 76, 76);
+}
+
+#aboutbtn-github:hover::before {
+  width: 18%;
+}
+
+#aboutbtn-github:hover::after {
+  width: 18%;
+}
+
+#aboutbtn-instagram::before {
+  transition: 0.2s;
+  content: "";
+  display: block;
+  height: 3px;
+  position: relative;
+  top: -17px;
+  left: -10px;
+  width: 0%;
+  background: rgb(25, 14, 85);
+}
+
+#aboutbtn-instagram::after {
+  content: "";
+  display: block;
+  height: 3px;
+  position: relative;
+  right: -101%;
+  bottom: -17px;
+  width: 0%;
+  transition: 0.2s;
+  background: rgb(25, 14, 85);
+}
+
+#aboutbtn-instagram:hover {
+  box-shadow: 0px 0px 10px rgba(93, 64, 255, 0.335);
+  text-shadow: 0px 0px 10px rgb(76, 76, 76);
+}
+
+#aboutbtn-instagram:hover::before {
+  width: 18%;
+}
+
+#aboutbtn-instagram:hover::after {
+  width: 18%;
+}
+
+@media (max-width: 1050px) and (min-width: 0px) {
+  body {
+    padding: 0px 80px;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 0px) {
+  body {
+    padding: 0px 40px;
+  }
+}
+
+@media (max-width: 810px) and (min-width: 0px) {
+  #about-main {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  #abouttxt {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-right: 0px;
+    margin-top: 19px;
+  }
+  #about-main {
+    padding: 0px 0px;
+  }
+}
+
+@media (max-width: 720px) and (min-width: 0px) {
+  .navbarlinks {
+    display: none;
+  }
+  .navbarlinks-mobile {
+    background: rgb(3, 3, 3);
+    padding-top: 40px;
+    padding-right: 170px;
+    box-shadow: 0px 2px 20px 6000px #000000eb;
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+    flex-direction: column;
+    position: fixed;
+    overflow-y: scroll;
+    top: 0;
+    right: 0;
+  }
+  .navbarlinks-mobile a {
+    margin: 17px 0px;
+    margin-left: 22px;
+  }
+  #menuclose {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: block;
+  }
+  #menuopen {
+    display: block;
+  }
+}
+
+@media (max-width: 450px) and (min-width: 0px) {
+  body {
+    padding: 0px 30px;
+  }
+  #aboutimg-img {
+    height: 180px;
+  }
+  #aboutbtn {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  #aboutbtn a {
+    margin: 0px 0px;
+    margin: 9px 0px;
+  }
+  #aboutbtn-portfolio {
+    background: #1c1253;
+    cursor: pointer;
+    color: white;
+    padding: 7px 12px;
+    border: none;
+    transition: 0.2s;
+    outline: none;
+    font-size: 17px;
+    font-weight: 400;
+    border-radius: 2px;
+    width: 100%;
+  }
+
+  #aboutbtn-github {
+    background: #1c1253;
+    cursor: pointer;
+    padding: 7px 12px;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    font-weight: 400;
+    border-radius: 2px;
+    color: white;
+    transition: 0.2s;
+    width: 100%;
+  }
+
+  #aboutbtn-instagram {
+    background: #1c1253;
+    cursor: pointer;
+    padding: 7px 12px;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    font-weight: 400;
+    border-radius: 2px;
+    color: white;
+    transition: 0.2s;
+    width: 100%;
+  }
+  #aboutbtn-portfolio:hover::before {
+    width: 0%;
+  }
+
+  #aboutbtn-portfolio:hover::after {
+    width: 0%;
+  }
+  #aboutbtn-github:hover::before {
+    width: 0%;
+  }
+
+  #aboutbtn-github:hover::after {
+    width: 0%;
+  }
+  #aboutbtn-instagram:hover::before {
+    width: 0%;
+  }
+
+  #aboutbtn-instagram:hover::after {
+    width: 0%;
+  }
+}

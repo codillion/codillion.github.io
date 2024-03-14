@@ -37,7 +37,7 @@ export default async function Notes() {
               <p>Notes of every video can be found here</p>
             </div>
       {topics.map((t) => (
-            <div id="notes-body">
+            <div id="notes-body" class={t._id}>
               <div className="notes-container">
                 <img src="/task.png" alt="Task_Png" />
                 <div className="notescont-txt">

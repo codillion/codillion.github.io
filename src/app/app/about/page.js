@@ -46,7 +46,7 @@ export default function About() {
           <h1>AKSHAT</h1>
           <p>A teen , fully passionate for programming and computer science and the mentor of Codillion Subscribers</p>
           <div id="aboutbtn">
-            <a target="_blank" href="https://akshatbisht22.github.io/"><button id="aboutbtn-portfolio">PORTFOLIO</button></a>
+            <a target="_blank" href="https://akshat22.netlify.app/"><button id="aboutbtn-portfolio">PORTFOLIO</button></a>
             <a target="_blank" href="https://github.com/akshatbisht22"><button id="aboutbtn-github">GITHUB</button></a>
             <a target="_blank" href="https://www.instagram.com/akshat_25.22/"><button id="aboutbtn-instagram">INSTAGRAM</button></a>
           </div>
